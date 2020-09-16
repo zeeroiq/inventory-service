@@ -5,6 +5,9 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/inventoryservice?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
   jpa:
     database: mysql
-    database-platform: org.hibernate.dialect.MySQL8Dialect
+    #    database-platform: org.hibernate.dialect.MySQL8Dialect
     hibernate:
       ddl-auto: update
+    properties:
+      hibernate:
+        diaect: org.hibernate.dialect.MySQL8Dialect
