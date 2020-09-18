@@ -1,2 +1,7 @@
 server:
   port: 8082
+#  active mq configuration
+spring:
+  artemis:
+    user: artemis
+    password: simetraehcapa
