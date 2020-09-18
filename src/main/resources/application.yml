@@ -5,3 +5,8 @@ spring:
   artemis:
     user: artemis
     password: simetraehcapa
+
+logging:
+  level:
+    com:
+      shri: debug
