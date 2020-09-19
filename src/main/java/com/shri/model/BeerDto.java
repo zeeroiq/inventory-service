@@ -1,8 +1,12 @@
 /*
+ * Created by zeeroiq on 9/20/20, 1:58 AM
+ */
+
+/*
  * Created by zeeroiq on 9/19/20, 1:15 AM
  */
 
-package com.shri.events;
+package com.shri.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
@@ -32,10 +36,10 @@ public class BeerDto implements Serializable {
     @Null
     private Integer version;
     @Null
-    @JsonFormat(pattern = "yyyy-mm-dd'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
     private OffsetDateTime createdOn;
     @Null
-    @JsonFormat(pattern = "yyyy-mm-dd'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
     private OffsetDateTime modifiedOn;
     @NotBlank
     private String beerName;

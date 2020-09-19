@@ -4,7 +4,7 @@
 
 package com.shri.inventory.services;
 
-import com.shri.events.NewInventoryEvent;
+import com.shri.model.events.NewInventoryEvent;
 import com.shri.inventory.config.JmsConfig;
 import com.shri.inventory.domain.BeerInventory;
 import com.shri.inventory.repository.BeerInventoryRepository;

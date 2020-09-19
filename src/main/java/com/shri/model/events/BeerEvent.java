@@ -2,20 +2,23 @@
  * Created by zeeroiq on 9/19/20, 1:23 AM
  */
 
-package com.shri.events;
+package com.shri.model.events;
 
+import com.shri.model.BeerDto;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
 @Data
 @Builder
-@RequiredArgsConstructor
+@NoArgsConstructor
+@AllArgsConstructor
 public class BeerEvent implements Serializable {
 
     private static final long serialVersionUID = 9184054766017896048L;
 
-    private final BeerDto beerDto;
+    private BeerDto beerDto;
 }
