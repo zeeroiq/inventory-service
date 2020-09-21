@@ -1,7 +1,15 @@
 server:
   port: 8081
-#  active mq configuration
+
 spring:
+  application:
+    name: inventory-service
+  #  active mq configuration
   artemis:
     user: artemis
     password: simetraehcapa
+
+logging:
+  level:
+    com:
+      shri: debug
