@@ -32,7 +32,7 @@ public class AllocationListener {
             builder.allocationError(false);
         }
         catch (Exception e) {
-            log.error("Allocation failed for orderId: " + request.getBeerOrderDto().getId());
+            log.error(">>>>> Allocation failed for orderId: " + request.getBeerOrderDto().getId());
             builder.allocationError(true);
         }
 

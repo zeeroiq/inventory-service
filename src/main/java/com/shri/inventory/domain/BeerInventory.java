@@ -24,8 +24,8 @@ public class BeerInventory extends BaseEntity implements Serializable {
 
     private static final long serialVersionUID = -3733555557522669818L;
 
-    @Type(type = "org.hibernate.type.UUIDCharType")
-    @Column(length = 40, columnDefinition = "varchar(40)", updatable = false, nullable = false)
+    @Type(type="org.hibernate.type.UUIDCharType")
+    @Column(length = 40, columnDefinition = "varchar(40)", updatable = false, nullable = false )
     private UUID beerId;
     private String upc;
     private Integer quantityOnHand = 0;
