@@ -8,6 +8,9 @@ spring:
   artemis:
     user: artemis
     password: simetraehcapa
+  # port configuration to zipkin
+  zipkin:
+    baseUrl: http://localhost:9411/
 
 logging:
   level:
