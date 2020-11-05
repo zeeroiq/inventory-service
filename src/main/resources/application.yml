@@ -11,6 +11,11 @@ spring:
   # port configuration to zipkin
   zipkin:
     enabled: false
+  # spring security basic authentication configuration
+  security:
+    user:
+      name: zeeroiq
+      password: password
 
 logging:
   level:
