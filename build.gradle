@@ -57,7 +57,7 @@ String imageName = "${dockerHubUsernameProperty}/${project.name}:$version"
 
 docker {
     name imageName
-//    tag project.name, project.version as String
+    tag "${project.name}", "${dockerHubUsernameProperty}/${project.name}:latest"
     dockerfile file('src/main/docker/Dockerfile')
     files "build/libs/${bootJar.archiveFileName.get()}"
     buildArgs([JAR_FILE: bootJar.archiveFileName.get()] as Map<String, String>)
