@@ -16,6 +16,11 @@ spring:
     user:
       name: zeeroiq
       password: password
+  # Spring Data hangs when not set under Spring Boot 2.3.0
+  data:
+    jpa:
+      repositories:
+        bootstrap-mode: default
 
 logging:
   level:

@@ -1,9 +1,8 @@
 spring:
   cloud:
-    discovery:
-      enabled: true
     config:
       discovery:
+        enabled: true
         service-id: brewery-config
       fail-fast: true
       # spring cloud config client security configuration
